@@ -1,0 +1,44 @@
+/* Iterators 
+Declaration of an iterator is simple: 
+		Vector<int>::iterator it = nums.begin() ; // points at 0
+Or :
+		auto ite = nums.begin() ; 
+
+Printing the inside of the iterator: 
+		Cout << *it ; 
+		Cout << *ite ; 
+*/ 
+
+//lets suppose the vector named nums
+vector<int> nums = {10 , 20 , 30 ,40 } ;
+
+//declaring an iterator:
+  vector<int>::iterator first = nums.begin();
+  vector<int>::iterator last = nums.end()-1;
+
+//to print first elements in vector: 
+  cout << "first element in table is : " << *first << endl ; 
+  cout << "second element in table is : " << first[1] << endl ; 
+  cout << "third element in table is : " << first[2] << endl ; 
+
+
+//to print the last element in vector:
+  cout << "last element is : "<< *last << endl ; 
+  cout << "last element is : "<< *(last - 1) << endl ; 
+
+//and if you want to advance the iterator to : 
+  advance(first , 3) ; 
+
+//we had 10 20 30 40 	the table becomes 10 20 30 40 
+//	  ^			                    ^
+//	iterator	      		        iterator
+
+		   	     	
+
+  LOOOK AT VIDEO 73
+
+    
+
+
+
+
